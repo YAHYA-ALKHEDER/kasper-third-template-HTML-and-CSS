@@ -1,7 +1,7 @@
 /* Start variables */
 :root {
   --main-color: #19c8fa;
-  --transparent-color: rgb(15 116 143 / 50%);
+  --transparent-color: rgb(15 116 143 / 85%);
 }
 /* End variables */
 
@@ -38,6 +38,7 @@ ul {
 
 /* Start header */
 header {
+  margin-top: 20px;
   position: absolute;
   width: 100%;
   left: 0%;
@@ -63,17 +64,21 @@ body > header > div > a > img {
   height: 50px;
 }
 
+@media (max-width: 320px) {
+  body > header > div > a > img {
+    height: 40px;
+  }
+}
+
 header nav {
   display: flex;
   flex: 1;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 20px;
 }
 
 header nav ul {
   display: flex;
-  margin-right: 35px;
 }
 
 @media (max-width: 767px) {
@@ -111,6 +116,7 @@ header nav .menu-in-mobile:hover + ul {
   position: absolute;
   top: 100%;
   right: 0%;
+  width: 75%;
   background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -195,24 +201,74 @@ body > div > div.overlay {
 .landing .text p {
   line-height: 1.8;
 }
+
+.change-background {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+  .change-background {
+    display: none;
+  }
+}
+
+.landing .fa-angle-left {
+  position: absolute;
+  left: 30px;
+}
+
+.landing .fa-angle-right {
+  right: 30px;
+}
+
+.landing .bullets {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+}
+
+.landing .bullets li {
+  border: 1px solid var(--main-color);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.landing .bullets li.active {
+  background-color: var(--main-color);
+}
 /* End landing */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  ...;
+  element {
+    color: value;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  ...;
+  element {
+    color: value;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  ...;
+  element {
+    color: value;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  ...;
+  element {
+    color: value;
+  }
 }
