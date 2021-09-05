@@ -499,6 +499,65 @@ div.my-work {
 }
 /* End porfolio */
 
+/* Start video */
+.main-video {
+  position: relative;
+}
+
+.main-video::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.main-video video {
+  width: 100%;
+}
+
+.text-main-video {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--transparent-color);
+  color: white;
+  padding: 50px;
+}
+
+@media (max-width: 767px) {
+  .text-main-video {
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--transparent-color);
+    color: white;
+  }
+}
+
+.text-main-video h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.text-main-video p {
+  margin: 10px;
+}
+.text-main-video button {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* End video */
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   element {
