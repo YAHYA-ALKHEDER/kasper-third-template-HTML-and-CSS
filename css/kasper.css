@@ -558,6 +558,39 @@ div.my-work {
 }
 /* End video */
 
+/* Start about */
+.about-section {
+  padding-top: var(--section-padding);
+  text-align: center;
+}
+
+.img-about {
+  max-width: 90%;
+}
+
+.pc-mobile-img {
+  width: 30%;
+}
+
+@media (max-width: 767px) {
+  .img-about {
+    flex-direction: column;
+    margin-top: -70px;
+    border-bottom: 1px solid #777;
+  }
+  .pc-mobile-img {
+    width: 48%;
+  }
+}
+
+@media (max-width: 575px) {
+  .pc-mobile-img {
+    width: 51%;
+  }
+}
+
+/* End about */
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   element {
