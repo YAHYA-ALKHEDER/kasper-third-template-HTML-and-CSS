@@ -1,7 +1,0 @@
-pc-mobile-img
-img
-fas
-li
-ul
-br
-href
