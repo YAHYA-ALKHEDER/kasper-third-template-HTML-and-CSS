@@ -4,6 +4,8 @@
   --transparent-color: rgb(15 116 143 / 85%);
   --drak-text-color: #777;
   --section-padding: 100px;
+  --light-color: #ebfbff;
+  --third-color: #006683;
 }
 /* End variables */
 
@@ -346,7 +348,8 @@ body > div > div.overlay {
   display: flex;
 }
 .services .serv-container .serv-box i {
-  margin-right: 50px;
+  margin-right: 35px;
+  color: var(--third-color);
 }
 
 @media (max-width: 767px) {
@@ -469,7 +472,7 @@ body > div > div.overlay {
 }
 
 div.my-work {
-  background-color: #e3faff;
+  background-color: var(--light-color);
 }
 
 .portfolio .imgs-container {
@@ -479,8 +482,8 @@ div.my-work {
 }
 
 .portfolio .imgs-container .box {
-  background-color: #e3faff;
-  border: solid 1.5px white;
+  background-color: var(--light-color);
+  border: solid 2px white;
   flex-basis: 20%;
   overflow: hidden;
   position: relative;
@@ -730,7 +733,7 @@ body > div.testimonials-and-skills > div > div.testimonials > div.user-box {
 }
 
 .customer-img {
-  background-color: #def8ff;
+  background-color: var(--light-color);
   padding: 20px;
   width: 100px;
   border-radius: 50%;
@@ -816,7 +819,7 @@ div.testimonials-bullets > ul > li.active {
   position: absolute;
   right: -20px;
   top: -35px;
-  background-color: black;
+  background-color: var(--third-color);
   color: white;
   font-size: 11px;
   padding: 7px 10px;
@@ -825,7 +828,7 @@ div.testimonials-bullets > ul > li.active {
 
 .skills .prog-holder .prog span::after {
   content: "";
-  border-color: black transparent transparent;
+  border-color: var(--third-color) transparent transparent;
   border-style: solid;
   border-width: 5px;
   right: -5px;
@@ -849,7 +852,7 @@ div.quote {
 }
 div.quote::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: hsla(193, 96%, 54%, 0.5);
   position: absolute;
   left: 0px;
   top: 0px;
@@ -901,8 +904,9 @@ div.pricing div.plans {
 }
 
 div.pricing div.plans div.plan-box {
-  background-color: #ebfbff;
+  background-color: var(--light-color);
   text-align: center;
+  color: var(--third-color);
 }
 div.pricing div.plans div.plan-box div.head-plan {
   padding: 40px 20px;
@@ -971,6 +975,7 @@ div.pricing p.text-contact {
   text-align: center;
   margin: 35px auto;
   font-size: 20px;
+  color: #777;
 }
 div.pricing a.button-contact {
   display: block;
