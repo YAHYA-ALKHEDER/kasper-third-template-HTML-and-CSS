@@ -1174,8 +1174,85 @@ div.contact-us div.contact-content div.text-info address {
   line-height: 1.6;
   color: var(--drak-text-color);
 }
-
 /* End contact us */
+
+/* Start footer */
+
+.footer {
+  padding-top: calc(var(--section-padding) / 2);
+  padding-bottom: calc(var(--section-padding) / 2);
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0px;
+  background-color: var(--third-color);
+}
+
+.footer .container {
+  display: flex;
+  position: relative;
+  align-content: center;
+  flex-direction: column;
+}
+
+.footer .logo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer .logo-footer img {
+  width: 75px;
+  margin-left: -20px;
+}
+
+.footer .logo-footer h4 {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.footer p.social-text {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.footer .social-text::before {
+  content: "";
+  background-color: white;
+  width: 25%;
+  height: 1px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.footer .social-icons-footer i {
+  font-size: 18px;
+  color: white;
+  margin: 0px 5px 30px;
+}
+
+.footer .rights-reserved {
+  margin-top: 50px;
+}
+
+.footer .rights-reserved span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+/* End footer */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
